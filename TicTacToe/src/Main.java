@@ -5,5 +5,5 @@ public class Main {
         Quadro q =new Quadro();
         q.abrirQuadro("Definições");
 
-          }
+    }
 }

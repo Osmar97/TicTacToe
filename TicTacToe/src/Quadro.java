@@ -5,7 +5,9 @@ public class Quadro {
 
      private JFrame frame;
 
-     public void mudarQuadro(String title,int tabuleiro,String vezDe){
+
+
+     public void mudarQuadro(String title, Jogo jogo){
           fecharQuadro();
 
           frame = new JFrame(title);
@@ -19,7 +21,7 @@ public class Quadro {
           if(title.equals("Definições"))
                frame.setContentPane(new Settings().mainPanel);
           else
-               frame.setContentPane(new TicTacToe(tabuleiro,vezDe).mainPanel);
+               frame.setContentPane(new TicTacToe(jogo).mainPanel);
 
           frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
           frame.setVisible(true);
