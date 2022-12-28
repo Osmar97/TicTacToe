@@ -1,12 +1,13 @@
 package TicTacToe;
 
+import TicTacToe.Jogo.Jogo;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class Quadro {
 
      private JFrame frame;
-
 
 
      public void mudarQuadro(String title, Jogo jogo){
